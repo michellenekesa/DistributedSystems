@@ -1,2 +1,2 @@
-# DistributedSystems
-Load balancing project here
+# DistributedSystem Project
+Load balancing.
