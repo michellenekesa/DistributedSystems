@@ -58,3 +58,23 @@ url = 'http://localhost:8000/home'  # Adjust the URL if necessary
 responses = [requests.get(url).text for _ in range(10)]
 for response in responses:
     print(response)
+To run the test script:
+
+sh
+Copy code
+python test_balancer.py
+Experiments
+
+1. Server Fault Tolerance
+The following graph shows the request distribution among servers when one of the servers fails:
+
+
+![output](https://github.com/michellenekesa/DistributedSystems/assets/105868059/33f99fc1-3587-429f-aff9-7d8c73526c50)
+
+2. Scalability Experiment
+The following graph shows the average load distribution as the number of servers increases:
+![output 3](https://github.com/michellenekesa/DistributedSystems/assets/105868059/19a8ea1c-d8f0-4462-acaa-127cea5f8933)
+
+3. Another Server Fault Tolerance Test
+The following graph shows the request distribution among servers in another fault tolerance scenario:
+![output 2](https://github.com/michellenekesa/DistributedSystems/assets/105868059/f0f7b92c-25b9-42d8-93b0-a3265a64d2a7)
